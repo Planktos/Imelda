@@ -30,3 +30,8 @@ p <- ggplot(d) + geom_line(aes(x=datetime, y=salt), colour = "darkblue", size = 
         axis.text.y = element_text(color = "black"))
 p
 
+file = "TABS_B_salt_Sept2019.png"
+png(file = file, width = 8, height = 8, units = "in", res = 250)
+plot(p)
+dev.off()
+
